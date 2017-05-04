@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>
+            <en>Sell Palett</en>
+            <de>Verkauf Palett</de>
+			<ru>Скупка поддонов</ru>
+		</name>
+        <image>store1.dds</image>
+        <price>1</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <specs>
+            <fillTypes>emptypalletsvapa</fillTypes>
+        </specs>
+        <functions>
+            <function><en>You can sell Paletts</en>
+					<de>Verkaufspunkt für Paletten</de>
+					<ru>Точка продажи поддонов</ru>
+			</function>
+        </functions>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>SVAPA</brand>
+		<species>placeable</species>
+        <category>SvapaAgro</category>
+        <vertexBufferMemoryUsage>466208</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>77898</indexBufferMemoryUsage>
+        <textureMemoryUsage>14330696</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <placeableType>heatingPlant</placeableType>
+    <filename>SellPalett.i3d</filename>
+    <placement testSizeX="7.5" testSizeZ="4" sizeX="3" sizeZ="2" useRandomYRotation="false" useManualYRotation="true"/>
+    <heatingPlant tipTrigger="0>0|0"/>
+</placeable>

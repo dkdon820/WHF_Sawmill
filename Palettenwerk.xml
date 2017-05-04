@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>
+			<en>Palletenwerk</en>
+            <de>Palettenwerk</de>
+			<ru>Производство поддонов</ru>
+		</name>
+        <image>store.dds</image>
+        <price>150000</price>
+        <dailyUpkeep>10</dailyUpkeep>
+		<functions>
+            <function><en>Production of pallets. Produces empty pallets. Resources: Wood</en>
+					<de>Palettenherstellung . Es produziert leere Paletten. Ressourcen: Holz</de>
+					<ru>Производство поддонов. Производит пустые поддоны. Ресурсы: Древесина</ru>
+			</function>
+        </functions>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>SVAPA</brand>
+		<species>placeable</species>
+        <category>SvapaAgro</category>
+        <vertexBufferMemoryUsage>257240</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>44208</indexBufferMemoryUsage>
+        <textureMemoryUsage>20273016</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <placeableType>FabrikScript</placeableType>
+    <filename>Palettenwerk.i3d</filename>
+    <placement testSizeX="6" testSizeZ="13" sizeX="6" sizeZ="13" useRandomYRotation="false" useManualYRotation="true" />
+
+	<tipOcclusionUpdateArea sizeX="14" sizeZ="26" />
+	
+	<clearAreas>
+        <clearArea startIndex="5|0" widthIndex="5|1" heightIndex="5|2"/>
+    </clearAreas>
+</placeable>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="SellPoint" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="textures/warningLines_diffuse.png" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="warningLines_mat" materialId="76" ambientColor="1 1 1">
+      <Texture fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="SellPalett.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="gameplay" nodeId="80">
+      <TransformGroup name="IN" translation="0 -1.19025 0.172936" nodeId="81">
+        <Shape shapeId="1" name="triggerPos" translation="0 1.34 0" static="true" trigger="true" collisionMask="8388608" nodeId="82" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <TransformGroup name="triggerStart" translation="-4.5 0 1.9984e-15" nodeId="83"/>
+          <TransformGroup name="triggerEnd" translation="4.5 0 -1.9984e-15" nodeId="84"/>
+          <TransformGroup name="iconPos" translation="-2.17595 -1.25 -0.810205" nodeId="85"/>
+          <Shape shapeId="1" name="farmSiloShovelTarget" translation="0 -0.1 0" scale="1 0.01 1" static="true" nodeId="86" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+      </TransformGroup>
+      <Shape shapeId="2" name="marker" translation="-9.77471e-08 0.02 0.258899" rotation="-180 0 -180" scale="0.834911 1 0.681274" clipDistance="150" nodeId="87" materialIds="76" receiveShadows="true"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="82">
+      <Attribute name="appearsOnPDA" type="boolean" value="true"/>
+      <Attribute name="fillTypes" type="string" value="emptypalletsvapa"/>
+      <Attribute name="index" type="string" value="SellPalett"/>
+      <Attribute name="isAreaTrigger" type="boolean" value="true"/>
+      <Attribute name="isFarmSilo" type="boolean" value="false"/>
+      <Attribute name="isSellingPoint" type="boolean" value="true"/>
+      <Attribute name="priceScales" type="string" value="1"/>
+      <Attribute name="shovelTargetIndex" type="string" value="2"/>
+      <Attribute name="stationName" type="string" value="Paletten ankauf"/>
+      <Attribute name="triggerWidth" type="float" value="3"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

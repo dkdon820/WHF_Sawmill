@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="32">
+    <author>Svapa-Agro</author>
+    <version>1.0.5</version>
+    <title>
+        <en>SA Palletenwerk</en>
+        <de>SA Palettenwerk</de>
+		<ru>SA Производство поддонов</ru>
+    </title>
+    <description> <en><![CDATA[SA Palletenwerk]]></en> <de><![CDATA[SA Palettenwerk]]></de><ru><![CDATA[SA Производство поддонов]]></ru>
+	</description>
+    <iconFilename>title_palette.dds</iconFilename>
+    <multiplayer supported="true"/>  
+	<l10n>
+
+		<text name="leer"> <en>empty</en> <de><![CDATA[leer]]></de> <ru><![CDATA[Нет]]></ru></text>
+		<text name="voll"> <en>full</en> <de><![CDATA[voll]]></de> <ru><![CDATA[Полный]]></ru></text>
+		<text name="ERROR"> <en>Info: </en> <de><![CDATA[Info: ]]></de> <ru><![CDATA[Информация: ]]></ru></text>
+		<text name="Rohstoffe33"> <en>resources: </en></text>
+		<text name="Produkte"> <en>products: </en></text>
+		<text name="AdditionalTrigger_startFill"><en>start filling</en></text>
+		<text name="AdditionalTrigger_stopFill"> <de>Befüllvorgang stoppen</de> <en>stop filling</en> <ru>Остановить загрузку</ru></text>
+		<text name="AdditionalTrigger_automaticFill"><de>zu automatischem Befüllen wechseln</de><en>to automatic filling</en> <ru>поменять на автоматическую загрузку</ru></text>
+		<text name="AdditionalTrigger_manualFill"><de>zu manuellem Befüllen wechseln</de><en>to manual filling</en> <ru>поменять на ручную загрузку</ru></text>
+		<text name="AdditionalTrigger_helpBoxTextInfo"><de>Info: Aussteigen, um automatisches Aufladen an/aus zu stellen!</de><en>Info: Get out for set automatic charging!</en> <ru>Информация: Выйти, для влк/откл автоматической загрузки</ru></text>
+		<text name="AdditionalTrigger_helpBoxTextAuto"><de>Aktuelle Einstellung: automatisches Aufladen</de><en>Aktual settings: automatic charging</en> <ru>Включена автоматическая загрузка</ru></text>
+		<text name="AdditionalTrigger_helpBoxTextManual"><de>Aktuelle Einstellung: manuelles Aufladen</de><en>Aktual settings: manual charging</en> <ru>Включена ручная загрузка</ru></text>
+
+
+		<text name="emptypalletsvapa"> <en>emptypallet</en></text>	
+		<text name="Holz"> <en>logs</en></text>
+		<text name="woodChips"> <en>woodChips</en></text>
+		<text name="SvapaAgro"><en>Svapa Agro</en></text>
+		
+		
+   </l10n>	
+	<extraSourceFiles>
+		<sourceFile filename="FabrikScript.lua" />
+		<sourceFile filename="AdditionalTriggers.lua" />
+		<sourceFile filename="newFilltypes.lua"/>
+		<sourceFile filename="addStoreCategory.lua" />		
+    </extraSourceFiles>
+  	<brands>
+        <brand name="SVAPA" title="Svapa" image="SvapaAgro_brand.dds"/>
+		
+    </brands>
+	
+	<storeItems>
+        <storeItem xmlFilename="Palettenwerk.xml"/>
+		<storeItem xmlFilename="SellPalett.xml"/>
+		<storeItem xmlFilename="LagerPalett.xml"/>
+		<newCategories>	
+			<newCategory name="SvapaAgro" previousCategory="placeables" imageFilename="SvapaAgro.dds" />
+		</newCategories>
+    </storeItems>
+	<newFillTypes hudsDirectory="fruitHuds/" groundTipDirectory="tipOnGround/" materialDirectory="materialHolders/" hasHolders="false">   
+	 
+	  <fillType name="emptypalletsvapa" pricePerLiter="1" showOnPriceTable="true" litersPerSecond="0.3244" massPerLiter="800" useForSpray="false" sprayerCategorys="manureSpreader" toCategorys="true" fillTypeCategorys="bulk" hasMaterials="false" hasParticles="false" useHeap="false" isCowBasefeed="false" isCowGrass="false" isCowPower="false" isCowWindrow="false" isSheepGrass="false" isPigBasefeed="false" isPigGrain="false" isPigProtein="false" isPigEarthfruit="false" />
+	</newFillTypes>	
+	
+</modDesc>

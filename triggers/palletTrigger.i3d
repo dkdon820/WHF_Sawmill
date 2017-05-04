@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="slow_bee_kuhl" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="gray_mat" materialId="55" diffuseColor="0.584314 0.584314 0.584314 1" ambientColor="0.588235 0.588235 0.588235">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="palletTrigger.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="PalletTrigger" translation="-8.842 -0.489634 0.147815" scale="6 1 5" static="true" trigger="true" collisionMask="16777216" nodeId="214" materialIds="55" nonRenderable="true"/>
+  </Scene>
+
+</i3D>
